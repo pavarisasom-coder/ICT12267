@@ -1,0 +1,108 @@
+
+.html{
+scroll-behavior:smooth;
+}
+
+/* Navbar */
+.navbar{
+backdrop-filter: blur(8px);
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Banner */
+.banner{
+background-image:url('breathtaking-view-st-bathans-south-island-new-zealand.jpg');
+background-size:cover;
+background-position:center;
+height:450px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+/* dark overlay */
+.banner::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+}
+
+.banner .text-center{
+position:relative;
+z-index:2;
+}
+
+.banner h1{
+font-size:3rem;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+/* button animation */
+.banner .btn{
+transition:0.3s;
+}
+
+.banner .btn:hover{
+transform:scale(1.1);
+}
+
+/* Services section */
+#services{
+margin-top:70px;
+}
+
+/* Cards */
+.card{
+border:none;
+border-radius:12px;
+overflow:hidden;
+transition:0.4s;
+}
+
+.card img{
+height:220px;
+object-fit:cover;
+}
+
+/* Hover effect */
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* button */
+.card .btn{
+transition:0.3s;
+}
+
+.card .btn:hover{
+transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+background:linear-gradient(45deg,#111,#333);
+}
+
+footer a{
+text-decoration:none;
+transition:0.3s;
+}
+
+footer a:hover{
+color:#0d6efd;
+}
+.card{
+opacity:0;
+transform:translateY(40px);
+transition:0.6s;
+}
+
